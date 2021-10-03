@@ -1,10 +1,12 @@
-import { configureStore } from "@reduxjs/toolkit"
-import modalReducer from "./modalSlice"
-import debuggingReducer from "./debuggingSlice"
-import uiReducer from "./uiSlice"
-import gameReducer from "./gameSlice"
+import { configureStore } from '@reduxjs/toolkit'
+import modalReducer from './modalSlice'
+import debuggingReducer from './debuggingSlice'
+import uiReducer from './uiSlice'
+import gameReducer from './gameSlice'
+import authReducer from './authSlice'
 
 export const combinedReducers = {
+  auth: authReducer,
   modals: modalReducer,
   debugging: debuggingReducer,
   ui: uiReducer,

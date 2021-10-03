@@ -1,16 +1,16 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit"
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 export enum DashboardViews {
-  GAMES = "GAMES",
-  QUESTIONS = "QUESTIONS",
-  ANSWERS = "ANSWERS",
-  JOIN_GAME = "JOIN_GAME",
-  PLAY_GAME = "PLAY_GAME",
+  GAMES = 'GAMES',
+  QUESTIONS = 'QUESTIONS',
+  ANSWERS = 'ANSWERS',
+  JOIN_GAME = 'JOIN_GAME',
+  PLAY_GAME = 'PLAY_GAME',
 }
 
 export enum GamePlayViews {
-  JOIN_GAME = "JOIN_GAME",
-  PLAY_GAME = "PLAY_GAME",
+  JOIN_GAME = 'JOIN_GAME',
+  PLAY_GAME = 'PLAY_GAME',
 }
 
 export interface uiState {
@@ -24,10 +24,13 @@ const initialState: uiState = {
 }
 
 export const uiSlice = createSlice({
-  name: "ui",
+  name: 'ui',
   initialState,
   reducers: {
-    setDashboardView: (state: uiState, action: PayloadAction<DashboardViews>) => {
+    setDashboardView: (
+      state: uiState,
+      action: PayloadAction<DashboardViews>
+    ) => {
       state.dashboardView = action.payload ?? DashboardViews.GAMES
     },
     setGamePlayView: (state: uiState, action: PayloadAction<GamePlayViews>) => {
