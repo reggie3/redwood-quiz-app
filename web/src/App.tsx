@@ -5,7 +5,6 @@ import { CssBaseline } from '@mui/material'
 import FatalErrorPage from 'src/pages/FatalErrorPage'
 import Routes from 'src/Routes'
 
-
 import '@fontsource/roboto/300.css'
 import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
@@ -15,7 +14,7 @@ const App = () => (
   <FatalErrorBoundary page={FatalErrorPage}>
     <RedwoodProvider titleTemplate="%PageTitle | %AppTitle">
       <RedwoodApolloProvider>
-      <CssBaseline />
+        <CssBaseline />
         <Routes />
       </RedwoodApolloProvider>
     </RedwoodProvider>
