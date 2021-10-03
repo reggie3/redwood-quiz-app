@@ -3,13 +3,12 @@ import { User } from '../../../types/User'
 import { LoginSources } from '../../../types/LoginSources'
 
 export interface AuthState {
-  loginSource: LoginSources | null
-
-  user: User | null
+  loginSource: LoginSources
+  user: User
 }
 const initialState: AuthState = {
-  loginSource: null,
-  user: null,
+  loginSource: '' as LoginSources,
+  user: {} as User,
 }
 
 export const authSlice = createSlice({

@@ -21,10 +21,10 @@
     "@redwoodjs/forms": "v0.37.1",
     "@redwoodjs/router": "v0.37.1",
     "@redwoodjs/web": "v0.37.1",
+    "google-one-tap": "^1.0.3",
     "prop-types": "15.7.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-google-login": "^5.2.2",
     "react-redux": "^7.2.5",
     "redux-devtools": "^3.7.0"
   },

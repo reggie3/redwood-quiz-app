@@ -1,7 +1,7 @@
 import { AppBar, Box, Typography } from '@mui/material'
 import { routes } from '@redwoodjs/router'
 import React from 'react'
-import LoginGoogle from '../LoginGoogle/LoginGoogle'
+import Login from '../Login/Login'
 import MyLink from '../MyLink/MyLink'
 
 const NavBar = () => {
@@ -19,7 +19,7 @@ const NavBar = () => {
           <MyLink to={routes.home()}>Home</MyLink>
           <MyLink to={routes.about()}>About</MyLink>
         </Box>
-        <LoginGoogle />
+        <Login />
       </Box>
     </AppBar>
   )
