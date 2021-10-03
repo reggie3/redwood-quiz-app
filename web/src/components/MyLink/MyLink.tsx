@@ -8,8 +8,6 @@ import { Typography } from '@mui/material'
 const MyLink = ({ children, to, ...rest }) => {
   const matchInfo = useMatch(to)
 
-  console.log('typeof children', typeof children)
-
   return (
     <Link
       href={to as string}
